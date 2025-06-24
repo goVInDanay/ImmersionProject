@@ -11,24 +11,29 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Dialog from '@mui/material/Dialog';
 import { blue } from '@mui/material/colors';
 
-const content = ['Type of Interview: ', 'Interview Contents: '];
+const content = ['Type of Interview', 'Interview Contents'];
 function SimpleDialog(props) {
   const { onClose, selectedValue, open } = props;
 
   const handleClose = () => {
     onClose(selectedValue);
   };
-
+  function handleClick(){
+    <Link to = '/dashboard/setup'/> 
+  }
   const handleListItemClick = (value) => {
     onClose(value);
   };
   return (
     <Dialog onClose={handleClose} open={open}>
-      <DialogTitle>Set backup account</DialogTitle>
+      <DialogTitle>Start Interview</DialogTitle>
       <List sx={{ pt: 0 }}>
         {content.map((items) => (
-          <h2>{items}: Interview</h2>
+          <div>          
+            <h2>{items}: Interview</h2>
+          </div>
         ))}
+        <Button onClick={handleClick}>Start Interview </Button>
       </List>
     </Dialog>
   );
@@ -56,7 +61,7 @@ export default function Interviews() {
   return (
     <div>
       <Button variant="outlined" onClick={handleClickOpen}>
-        Open simple dialog
+        Interview 
       </Button>
       <SimpleDialog
         selectedValue={selectedValue}
