@@ -7,7 +7,7 @@ function Dashboard(){
         <div>
             This is dashboard
             <Interviews/>
-            <Link to = '/dashboard/setup'><Button>Start Interview</Button></Link> 
+
             <Previous/>
         </div>
     )
