@@ -3,3 +3,4 @@ function Interview(){
         <div> Interview questions here </div>
     )
 }
+export default Interview
