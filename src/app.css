@@ -6,7 +6,3 @@
   margin: 0;
 }
 
-/* Remove arrows in Firefox */
-.no-arrows {
-  -moz-appearance: textfield;
-}

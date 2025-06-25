@@ -1,11 +1,10 @@
-import Layout from "../Layout/Layout"
+
 import { Link } from "react-router-dom";
 import SignUp from "./SignUp";
 import { useState } from "react";
 function SignIn(){
     const [role, setRole] = useState("student");
     return(
-        <Layout>
             <section className="bg-gray-50 dark:bg-gray-900">
                 <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
                     <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
@@ -64,7 +63,6 @@ function SignIn(){
                     </div>
                 </div>
                 </section>
-        </Layout>
     )
 }
 export default SignIn
