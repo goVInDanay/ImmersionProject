@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import Layout from "../Layout/Layout";
 import { Link } from "react-router-dom";
 
 function SignUp() {
   return (
-    <Layout>
       <section className="bg-gray-50 dark:bg-gray-900">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <a
@@ -94,7 +92,6 @@ function SignUp() {
           </div>
         </div>
       </section>
-    </Layout>
   );
 }
 
