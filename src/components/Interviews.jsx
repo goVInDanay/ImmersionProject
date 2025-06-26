@@ -14,27 +14,22 @@ import { Label } from "@/components/ui/label";
 function Interviews() {
   const [rollNumber, setRollNumber] = useState("");
   const [topics, setTopics] = useState("");
-
   const handleSubmit = () => {
     console.log("Submitting:", { rollNumber, topics });
     setRollNumber("");
     setTopics("");
   };
-
   return (
-    
     <Dialog>
       <DialogTrigger asChild>
         <div className="grid grid-cols-1 md:grid-cols-5 my-5 p-10">
           <Button className="p-10 border rounded-md bg-secondary hover:scale-105 hover:shadow-md cursor-pointer transition-all text-center">Add New</Button>
         </div>
       </DialogTrigger>
-
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle>Add New Interview</DialogTitle>
         </DialogHeader>
-
         <div className="grid gap-4 py-4">
           <div className="grid gap-2">
             <Label htmlFor="roll">Roll Number</Label>
@@ -46,7 +41,6 @@ function Interviews() {
               type="text"
             />
           </div>
-
           <div className="grid gap-2">
             <Label htmlFor="topics">Topics</Label>
             <Textarea
@@ -57,7 +51,6 @@ function Interviews() {
             />
           </div>
         </div>
-
         <DialogFooter>
           <Button onClick={handleSubmit}>Save Interview</Button>
         </DialogFooter>
