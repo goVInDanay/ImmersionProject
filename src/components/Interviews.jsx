@@ -23,7 +23,7 @@ function Interviews() {
     <Dialog>
       <DialogTrigger asChild>
         <div className="grid grid-cols-1 md:grid-cols-5 my-5 p-10">
-          <Button className="p-10 border rounded-md bg-secondary hover:scale-105 hover:shadow-md cursor-pointer transition-all text-center">Add New</Button>
+          <Button className="p-10 border rounded-md border-neutral-800 bg-secondary hover:scale-105 hover:bg-secondary cursor-pointer transition-all text-center text-black">Add New</Button>
         </div>
       </DialogTrigger>
       <DialogContent className="sm:max-w-md">
