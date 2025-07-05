@@ -7,7 +7,7 @@ import {
 import SignUp from './components/Auth/SignUp'
 import SignIn from './components/Auth/SignIn'
 import Home from "./components/Home";
-import Setup from "./components/Setup";
+import Setup from "./components/SetupPage";
 import StudentDashboard from "@/components/StudentDashboard";
 import Dashboard from "./components/Dashboard";
 import QuestionsSection from "./components/QuestionsSection";
