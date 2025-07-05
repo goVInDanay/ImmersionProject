@@ -8,8 +8,6 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },
   });
-
-  // Define associations (will be connected in models/index.js)
   User.associate = (models) => {
     User.belongsToMany(models.Interview, {
       through: "UserInterviews",
